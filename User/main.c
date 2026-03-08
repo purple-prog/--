@@ -3,6 +3,7 @@
 #include "LED.h"
 #include "Key.h"
 #include "Motor.h"
+#include "TIM3_PWM.h"
 int main(void){
 	uint8_t KeyNum;
 	LED_Init();
