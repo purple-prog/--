@@ -2,6 +2,7 @@
 #include "Delay.h"
 #include "LED.h"
 #include "Key.h"
+#include "Motor.h"
 int main(void){
 	uint8_t KeyNum;
 	LED_Init();
