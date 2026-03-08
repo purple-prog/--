@@ -4,6 +4,7 @@
 #include "Key.h"
 #include "Motor.h"
 #include "TIM3_PWM.h"
+#include "Trace.h"
 int main(void){
 	uint8_t KeyNum;
 	LED_Init();
