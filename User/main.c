@@ -7,6 +7,7 @@
 #include "Trace.h"
 #include "Servo.h"
 #include "HCSR04.h"
+#include "Control.h"
 int main(void){
 	uint8_t KeyNum;
 	LED_Init();
