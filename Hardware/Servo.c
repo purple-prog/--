@@ -28,3 +28,16 @@ void Servo_Init(u16 arr,u16 psc){
 	TIM_OC1PreloadConfig(TIM2, TIM_OCPreload_Enable);
 	TIM_Cmd(TIM2, ENABLE);
 }
+
+#define SERVO_MIN 50
+#define SERVO_MAX 250
+
+void Servo_SetAngle(uint8_t angle)
+{
+    if (angle > 180) {
+        angle = 180;
+    }
+    uint16_t pulse = SERVO_MIN +(uint32_t)(angle) * (SERVO_MAX- SERVO_MIN) / 180;
+    TIM_SetCompare1(TIM2, pulse);
+    Delay_ms(500);
+}
