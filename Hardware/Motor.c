@@ -1,6 +1,6 @@
 #include "stm32f10x.h"
 #include "Delay.h"
-#include "TIM_PWM.h"
+#include "TIM3_PWM.h"
 void MOTOR_Init(void)
 {
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
