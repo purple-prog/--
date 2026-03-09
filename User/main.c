@@ -6,6 +6,7 @@
 #include "TIM3_PWM.h"
 #include "Trace.h"
 #include "Servo.h"
+#include "HCSR04.h"
 int main(void){
 	uint8_t KeyNum;
 	LED_Init();
