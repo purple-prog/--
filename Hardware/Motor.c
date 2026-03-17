@@ -2,7 +2,6 @@
 #include "Delay.h"
 #include "TIM3_PWM.h"
 
-// TB6612 STBY 引脚定义（必须使能）
 #define STBY_Pin GPIO_Pin_9
 #define STBY_GPIO_Port GPIOB
 
